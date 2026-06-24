@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+}
+
+nav{
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav{
+  width: 80%;
+  height:75px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.nav h3 a{
+  color: rgb(0, 0, 186);
+  font-size: 40px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.nav h3{
+  color: rgb(0, 0, 186);
+  font-size: 40px;
+  align-self: center;
+}
+
+.navat{
+  align-self: center;
+}
+
+section a{
+  padding-right: 10px;
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+}
+
+.mg{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr;
+}
+
+.dd{
+  color: rgb(0, 98, 255);
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 2 / -2;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.main h1{
+  justify-self: center;
+}
+
+.main p{
+  padding: 50px 0;
+}
+
+.imgmain{
+  width: 200px;
+  justify-self: center;
+}
+
+.gridinmain{
+  height: auto;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+  box-shadow: 0px 0px 10px rgba(203, 202, 202, 0.678);
+  border: rgb(217, 217, 217) 1px solid;
+  border-radius: 5px;
+}
+
+#wmina{
+  margin: 30px 0;
+}
+
+.cardfor2{
+  width: 750px;
+  display: grid;
+  grid-template-columns:1fr 1fr 5fr;
+  grid-template-rows:1fr;
+  margin-bottom: 15px;
+}
+
+.cardfor2 img{
+  height: 300px;
+  box-shadow: 0px 0px 10px rgba(203, 202, 202, 0.678);
+}
+
+.span{
+  height: 200px;
+}
+
+.atributss{
+  box-shadow: 0px 0px 10px rgba(203, 202, 202, 0.678);
+  border-radius: 5px;
+  height: auto;
+  border-bottom: 2px solid rgb(255, 204, 0);
+  padding: 10px;
+}
+
+footer{
+  background-color: blueviolet;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+  align-items: center;
+}
+
+.atrbuts{
+  height: 150px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.oneofa{
+  padding: 7px;
+  text-decoration: none; 
+  color: white;
+}
+
+a:hover{
+  color: rgb(94, 0, 141);
+  transition: 2s;
+}
+
+.card h2{
+  padding: 10px 5px;
+}
+
+.contacts_block{
+    height: 15vh;
+    grid-column: 2 / -2;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-gap: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    grid-column: 2 / -2;
+    padding-top: 75px;
+}
+
+.con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 99vw;
+    grid-column: 2 / -2;
+}
+
+
+.h2text {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+
+.request{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-self: center;
+    grid-column: 2 / -2;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    border: none;
+    margin: 20px;
+    max-height: 25px;
+    border-radius: 7px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.inputs::placeholder {
+    color: #999;
+}
+
+.inputs:focus {
+    border-bottom: 1px solid #000;
+}
+
+.subinp {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    margin: 20px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.subinp:hover {
+    background-color: blueviolet;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+
+  .gridinmain{
+    grid-template-columns: 1fr;
+  }
+
+  .subinp{
+    width: 75%;
+    justify-self: center;
+  }
+
+  .inputs{
+    width: 75%;
+    justify-self: center;
+  }
+
+  .span{
+    display: none;
+  }
+
+  nav {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  .nav h3,
+  .nav h3 a {
+    font-size: 32px;
+  }
+
+  .navat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navat a {
+    padding-right: 0;
+  }
+
+  .mg {
+    display: block;
+    padding: 0 15px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main h1 {
+    font-size: 30px;
+  }
+
+  .main p {
+    padding: 25px 0;
+  }
+
+  .card{
+    max-width: 300px;
+    justify-self: center;
+    padding: 20px;
+  }
+
+  .cardfor2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardfor2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .atributss {
+    margin-top: 10px;
+  }
+
+  footer {
+    height: auto;
+    padding: 40px 15px;
+    margin-top: 80px;
+  }
+
+  .atrbuts {
+    height: auto;
+  }
+}
